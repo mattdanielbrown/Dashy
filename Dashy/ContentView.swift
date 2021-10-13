@@ -28,6 +28,12 @@ struct ContentView: View {
                         
 //                        Divider()
                     }
+
+                    Group{
+                        SubTitleView(title: "Here are your stocks", image: "chart.xyaxis.line")
+                        
+                        StocksView(stocks: stocksViewModel.stocks)
+                    }
                     
                     Group{
                         SubTitleView(title: "Here are the latest News", image: "newspaper.fill")
@@ -35,11 +41,6 @@ struct ContentView: View {
                         NewsView(news: newsViewModel.news)
                         
 //                        Divider()
-                    }
-                    Group{
-                        SubTitleView(title: "Here are your stocks", image: "chart.xyaxis.line")
-                        
-                        StocksView(stocks: stocksViewModel.stocks)
                     }
                     
                     Spacer()

@@ -12,7 +12,7 @@ class StocksViewModel: ObservableObject{
     @Published var stocks = [StocksModel]()
     
     init(){
-        let watchList = ["AAPL", "MSFT", "GOOG", "AMZN", "FB", "TSLA", "NVDA", "JPM", "BABA", "ASML", "NFLX", "NKE", "VZ"]
+        let watchList = ["AAPL", "MSFT", "GOOG", "AMZN", "FB", "TSLA", "NVDA", "ASML", "NFLX", "NKE", "VZ"]
         for watchList in watchList {
             self.fetchJson(for: watchList)
         }
