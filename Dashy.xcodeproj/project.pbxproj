@@ -21,6 +21,11 @@
 		C2805AB32717586900FA8F38 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2805AB22717586900FA8F38 /* ArticleView.swift */; };
 		C2805AB92717599E00FA8F38 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C2805AB82717599E00FA8F38 /* SDWebImageSwiftUI */; };
 		C2805ABB27175A0600FA8F38 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2805ABA27175A0600FA8F38 /* AsyncImage.swift */; };
+		C2805ABD2717605200FA8F38 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2805ABC2717605200FA8F38 /* ForecastView.swift */; };
+		C2805ABF27176EAA00FA8F38 /* SingleStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2805ABE27176EAA00FA8F38 /* SingleStockView.swift */; };
+		C2805AC127177D7C00FA8F38 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2805AC027177D7C00FA8F38 /* NewsViewModel.swift */; };
+		C2805AC327177FF900FA8F38 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2805AC227177FF900FA8F38 /* WeatherViewModel.swift */; };
+		C2805AC52717815B00FA8F38 /* StocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2805AC42717815B00FA8F38 /* StocksViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,11 @@
 		C2805AAE271754E000FA8F38 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		C2805AB22717586900FA8F38 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		C2805ABA27175A0600FA8F38 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		C2805ABC2717605200FA8F38 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		C2805ABE27176EAA00FA8F38 /* SingleStockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStockView.swift; sourceTree = "<group>"; };
+		C2805AC027177D7C00FA8F38 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		C2805AC227177FF900FA8F38 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		C2805AC42717815B00FA8F38 /* StocksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				C2805AAE271754E000FA8F38 /* Formatter.swift */,
+				C2805AC027177D7C00FA8F38 /* NewsViewModel.swift */,
+				C2805AC227177FF900FA8F38 /* WeatherViewModel.swift */,
+				C2805AC42717815B00FA8F38 /* StocksViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				C2805AA3271751A600FA8F38 /* WeatherView.swift */,
+				C2805ABC2717605200FA8F38 /* ForecastView.swift */,
 			);
 			path = WeatherViews;
 			sourceTree = "<group>";
@@ -141,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				C2805AA5271751AE00FA8F38 /* StocksView.swift */,
+				C2805ABE27176EAA00FA8F38 /* SingleStockView.swift */,
 			);
 			path = StocksViews;
 			sourceTree = "<group>";
@@ -233,14 +248,19 @@
 				C2805A9E2717503200FA8F38 /* NewsModel.swift in Sources */,
 				C2805AA8271751BA00FA8F38 /* NewsView.swift in Sources */,
 				C2805A8E2717500300FA8F38 /* ContentView.swift in Sources */,
+				C2805AC52717815B00FA8F38 /* StocksViewModel.swift in Sources */,
 				C2805AAF271754E000FA8F38 /* Formatter.swift in Sources */,
 				C2805AA02717503A00FA8F38 /* WeatherModel.swift in Sources */,
 				C2805ABB27175A0600FA8F38 /* AsyncImage.swift in Sources */,
 				C2805AA4271751A600FA8F38 /* WeatherView.swift in Sources */,
 				C2805A8C2717500300FA8F38 /* DashyApp.swift in Sources */,
 				C2805AB32717586900FA8F38 /* ArticleView.swift in Sources */,
+				C2805ABF27176EAA00FA8F38 /* SingleStockView.swift in Sources */,
+				C2805AC327177FF900FA8F38 /* WeatherViewModel.swift in Sources */,
 				C2805AA22717509800FA8F38 /* StocksModel.swift in Sources */,
+				C2805AC127177D7C00FA8F38 /* NewsViewModel.swift in Sources */,
 				C2805AA6271751AE00FA8F38 /* StocksView.swift in Sources */,
+				C2805ABD2717605200FA8F38 /* ForecastView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

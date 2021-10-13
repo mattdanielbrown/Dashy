@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct WeatherView: View {
+    let weather: WeatherModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.horizontal) {
+           HStack{
+                ForEach(weather.forecast, id: \.self) { forecast in
+                    ForecastView(forecast: forecast)
+                }
+            }
+        }
     }
 }
 
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView()
+        WeatherView(weather: exampleWeather)
     }
 }

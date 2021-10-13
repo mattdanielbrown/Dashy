@@ -9,10 +9,20 @@ import SwiftUI
 
 struct NewsView: View {
     let news: NewsModel
+    
+    let columns = [
+        GridItem(.adaptive(minimum: 550))
+    ]
     var body: some View {
-        VStack{
-            ForEach(news.articles, id: \.self) { article in
-                ArticleView(article: article)
+        
+        ScrollView {
+            LazyVGrid(columns: columns){
+                ForEach(news.articles, id: \.self) { article in
+                    ArticleView(article: article)
+
+    //                Todo: Context menu, add more stuff from model
+                    
+                }
             }
         }
     }
@@ -21,5 +31,6 @@ struct NewsView: View {
 struct NewsView_Previews: PreviewProvider {
     static var previews: some View {
         NewsView(news: exampleNews)
+            .frame(width: 500)
     }
 }

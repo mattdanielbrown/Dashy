@@ -18,7 +18,7 @@ struct Article: Codable, Hashable {
     let url: String
     let source, title, articleDescription: String
     let image: String
-    let date: Date
+    let date: String
     
     enum CodingKeys: String, CodingKey {
         case author, url, source, title
@@ -37,7 +37,7 @@ NewsModel(articles: [
             title: "Southwest and American Airlines to ignore Texas Gov. Abbott's vaccine mandate ban - The Washington Post",
             articleDescription: "White House press secretary Jen Psaki told reporters the federal mandate on vaccination supersedes state law.",
             image:     "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/TIAYGKRLWEI6ZML5TBOBQ3PDHA.jpg&w=1440",
-            date:  Date()
+            date: "2021-10-13T18:21:57Z"
            ),
     Article(author: "Eric Moody",
             url:     "https://www.espn.com/fantasy/football/story/_/page/21pickupsWeek6/fantasy-football-streaming-pickups-week-6-taylor-heinicke-quez-watkins-more",
@@ -45,7 +45,7 @@ NewsModel(articles: [
             title:     "Fantasy football streaming pickups for Week 6 - Taylor Heinicke, Quez Watkins, and more - ESPN",
             articleDescription: "If you need an injury replacement or like to play matchups from week to week, we have potential options who have favorable ones you can exploit in Week 6.",
             image:         "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2021%2F1012%2Fr922028_1296x729_16%2D9.jpg",
-            date:  Date()
+            date: "2021-10-13T18:21:57Z"
            )
 ]
 )

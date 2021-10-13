@@ -25,35 +25,39 @@ import SDWebImageSwiftUI
 struct ArticleView: View {
     let article: Article
     var body: some View {
-        ZStack(alignment: .leading) {
-            WebImage(url: URL(string: article.image)!)
-                .resizable()
-                .scaledToFill()
-                .overlay(Color.black.opacity(0.45))
-                .blur(radius: 5)
-                VStack(alignment: .leading) {
-                    Text(article.title)
-                        .bold()
-                    Text(article.articleDescription)
-                        .padding(.top, 5)
-//                    Spacer(minLength: 0)
-                        
-                    HStack{
-                        Spacer()
-                        Text(article.author ?? "Unknown")
-                            .italic()
-                            .foregroundColor(.gray)
-
-                    }
+        HStack {
+            HStack{
+                WebImage(url: URL(string: article.image)!)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 150, height: 150, alignment: .leading)
+                    .clipped()
+                    .cornerRadius(10)
+                
+            }
+            
+            VStack(alignment: .leading) {
+                Text(article.title)
+                    .bold()
+                Text(article.articleDescription)
+                    .padding(.top, 5)
+                HStack{
+                    Spacer()
+                    Text(article.author ?? "Unknown")
+                        .italic()
+                        .foregroundColor(.gray)
+                    
                 }
+            }
             .padding()
         }
-        .frame(width: 600, height: 150, alignment: .leading)
+        .frame(height: 150, alignment: .leading)
+        .background(VisualEffectView(material: NSVisualEffectView.Material.menu, blendingMode: NSVisualEffectView.BlendingMode.behindWindow))
         .clipped()
         .cornerRadius(10)
         .padding(5)
-
-//        .background()
+        
+        //        .background()
     }
 }
 
